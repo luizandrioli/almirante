@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1a0WXA+058RXPxPg6fy4IWvTNh®E263XmFcJ1SAwiGgFAW/dAiSJXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ302DKtIkvYIK3UENzmM7KCkRr/rE9/@pg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper-js/1.12.9/umd/popper-min.js"
+        integrity=" sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfab40"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="
+                sha384-JZR6Spejh4U©2d8jOt6vLEHfe/JQGiRRS@QxSfFWpi1MquVdAyjUar5+76PVCmY"
+        crossorigin="anonymous"></script>
+    <title>Lista de Tarefas </title>
+</head>
+
+<body onload="carregarListaDespesas()">
+    <nav class="navbar navbar-expand-1g navbar-dark bg-primary mb-5">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="lista.html">Cadastro</a>
+                        </1i>
+                        <11 class="nav-item">
+                            <a class="nav-link" href="consulta.html">Consulta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col mb-5">
+                <h1 class="display-4"></h1>Consultando despesas</h1>
+            </div>
+        </div>
+
+        <div class="row mb-2">
+            <div class="col-md-2">
+                <select class="form-control" id="ano"></select>
+                <option value=""></option>Ano</option>
+                <option value="2023">2023</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-control" id="mes">
+                    <option value="">Mēs</option>
+                    <option value="1">Janeiro</option>
+                    <option value="2">Fevereiro</option>
+                    <option value="3">Março</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Maio</option>
+                    <option value="6">Junho</option>
+                    <option value="7">Julho</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="text" class="form-control" placeholder="Dia" id="dia" />
+            </div>
+            <div class="col-md-6">
+                <select class="form-control" id="tipo">
+                    <option value="">Tipo</option>
+                    <option value="1"></option>Alimentação</option>
+                    <option value="2"></option>Educação</option>
+                    «option value="3">Lazer</option>
+                    <option value="4"></option>Saúde</option>
+                    <option value="5">Transporte</option>
+                </select>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-8">
+                <div><input type="text" class="form-control" placeholder="Descrição" id="descricao" />
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control" placeholder="Valor" id="valor" /></option>
+                </div>
+                <div class="col-md-2 d-flex justify-content-end">
+                    <button type="button" class="btn btn-primary" onclick="pesquisarDespesas()"></option>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Data</th>
+                                <th>Tipo</th>
+                                <th>Descricao</th>
+                                <th>Valor</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaDespesas">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+            <script src="app.js"></script>
+    </div>
+    </option>
+    </nav>
+
+</body>
+
+</html>
