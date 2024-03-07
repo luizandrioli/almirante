@@ -174,4 +174,16 @@ function cadastrarDespesas() {
     
 }
 
-function carregart
+function carregaListaDespesas(despesas=Array(),filtro=false){
+    if(despesas.lenght ==0 && filtro == false){
+        despesas= db.recuperarTodosRegistros()
+    }
+
+    let ListaDespesas=document.getElementById("listadepesas")
+    ListaDespesas.innerHTML=''
+    despesas.forEach(function(d)){
+
+        var linha = ListaDespesas.insertRow();
+    }
+
+}
