@@ -161,7 +161,7 @@ function cadastrarDespesas() {
         descricao.value = ''
         valor.value = ''
 
-    } else {
+        } else {
 
         document.getElementById('modal_titulo').innerHTML ='erro na inclusao do registro'
         document.getElementById('modal_titulo_div').className ='modal-header text-danger'
